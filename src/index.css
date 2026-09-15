@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --color-stone-50: #F4F3F0;
+  --color-stone-100: #EAE7E0;
+  --color-stone-900: #1C1C1A;
+  --color-stone-950: #121211;
+  --color-accent: #E55C3A; /* A subtle terracotta for data highlights */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-stone-50);
+  color: var(--color-stone-950);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+/* Subtle noise texture for organic, tactile feel */
+.noise-bg {
+  position: relative;
+}
+.noise-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* SaaS Structural Grids */
+.bg-grid {
+  background-size: 64px 64px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
+}
+
+.bg-grid-dark {
+  background-size: 64px 64px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  mask-image: radial-gradient(circle at top, black, transparent 70%);
+  -webkit-mask-image: radial-gradient(circle at top, black, transparent 70%);
+}
+
+.mask-fade-left {
+  mask-image: linear-gradient(to right, transparent, black 15%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
