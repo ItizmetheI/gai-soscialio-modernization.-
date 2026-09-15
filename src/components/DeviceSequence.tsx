@@ -57,7 +57,7 @@ export function DeviceSequence() {
           className="absolute top-12 max-w-2xl text-center z-0"
         >
           <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-stone-400 mb-4">Phase 1: Content Delivery</h2>
-          <p className="text-3xl font-display text-stone-900 tracking-tight">Seamless, high-retention native content.</p>
+          <p className="text-[clamp(1.5rem,4vw,2.5rem)] font-display text-stone-900 tracking-tight text-balance">Seamless, high-retention native content.</p>
         </motion.div>
 
         {/* The Device */}

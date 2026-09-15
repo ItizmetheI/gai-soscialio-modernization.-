@@ -39,12 +39,12 @@ export function Hero() {
             </span>
           </div>
           
-          <h1 className="text-6xl md:text-7xl lg:text-[5.5rem] font-display font-medium tracking-tight text-balance leading-[1.05] text-stone-950 mb-6">
+          <h1 className="text-[clamp(3.5rem,8vw,5.5rem)] font-display font-medium tracking-tight text-balance leading-[1.05] text-stone-950 mb-6">
             We don't just post. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600 italic pr-2">We engineer growth.</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-stone-500 max-w-lg text-balance font-light leading-relaxed mb-10">
+          <p className="text-[clamp(1.125rem,2vw,1.25rem)] text-stone-500 max-w-lg text-balance font-light leading-relaxed mb-10">
             From scroll-stopping UGC to dominant SEO backlinks and end-to-end account management. We are the growth engine for modern brands.
           </p>
 

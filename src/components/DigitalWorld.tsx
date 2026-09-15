@@ -26,7 +26,7 @@ export function DigitalWorld() {
               <div className="w-1.5 h-1.5 rounded-full bg-[#8B5CF6] animate-pulse" />
               Module 02: Analytics
             </span>
-            <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tight leading-[1.1] text-stone-100 max-w-2xl">
+            <h2 className="text-[clamp(2.5rem,5vw,4.5rem)] font-display font-medium tracking-tight leading-[1.1] text-stone-100 max-w-2xl">
               From fleeting views <br className="hidden md:block" />to compounded retention.
             </h2>
           </motion.div>
@@ -38,7 +38,7 @@ export function DigitalWorld() {
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col items-start md:items-end"
           >
-            <p className="text-stone-400 max-w-xs text-left md:text-right text-balance font-light mb-6 text-sm">
+            <p className="text-[clamp(0.875rem,2vw,1rem)] text-stone-400 max-w-xs text-left md:text-right text-balance font-light mb-6">
               Our architecture transforms passive scrolling into active, measurable participation loops.
             </p>
             <MagneticButton intensity={0.3} className="inline-flex items-center gap-2 px-6 py-3 bg-stone-900 border border-stone-800 rounded-full hover:bg-stone-800 transition-colors text-stone-100">
@@ -111,7 +111,7 @@ export function DigitalWorld() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="flex-1 bg-stone-900/40 border border-[#8B5CF6]/20 rounded-3xl p-8 backdrop-blur-xl flex flex-col justify-between relative overflow-hidden"
+              className="flex-1 bg-stone-900/40 border border-[#8B5CF6]/20 rounded-3xl p-8 backdrop-blur-xl flex flex-col justify-between relative overflow-hidden group hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_20px_40px_-15px_rgba(139,92,246,0.15)] transition-all duration-300"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#8B5CF6]/10 rounded-full blur-3xl" />
               
@@ -282,7 +282,7 @@ function MetricCard({ title, value, sub, delay, icon }: any) {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
-      className="flex-1 rounded-3xl p-8 backdrop-blur-xl bg-stone-900/40 border border-stone-800/60 flex flex-col justify-between group hover:bg-stone-800/40 transition-colors"
+      className="flex-1 rounded-3xl p-8 backdrop-blur-xl bg-stone-900/40 border border-stone-800/60 flex flex-col justify-between group hover:bg-stone-800/40 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_20px_40px_-15px_rgba(139,92,246,0.1)] transition-all duration-300"
     >
       <div className="flex justify-between items-start mb-8">
         <h3 className="text-xs uppercase tracking-widest font-semibold text-stone-500">{title}</h3>
